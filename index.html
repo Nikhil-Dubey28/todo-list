@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Todo App</h1>
+    </header>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <input type="text" id="todoName" class="form-control" placeholder="Todo Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="todoDescription" class="form-control" placeholder="Todo Description"
+                            required>
+                    </div>
+                </div>
+                <button class="btn btn-primary mt-3" onclick="addItem()">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5>Todos Remaining</h5>
+            </div>
+            <ul id="todoList" class="list-group list-group-flush"></ul>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5>Todos Done</h5>
+            </div>
+            <ul id="doneList" class="list-group list-group-flush"></ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Axios JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- custom js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
